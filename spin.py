@@ -2,8 +2,8 @@ spins = input("How many times did you spin? (Enter a negative number for counter
 
 #TODO - Edit the degrees calculation here!
 degrees = float(spins) * 360
-
-print("You are facing", degrees, "degrees relative to north")
+rotate = degrees%360
+print("You are facing", rotate, "degrees relative to north")
 
 # when I input 0.25, I should get "90.0 degrees relative to north"
 # when I input 1, I should get "0.0 degrees relative to north" (back where I started)
